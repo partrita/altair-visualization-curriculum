@@ -1,0 +1,32 @@
+version: 1
+project:
+  title: Visualization Curriculum
+  authors:
+    - name: Jeffrey Heer
+    - name: Dominik Moritz
+    - name: Jake VanderPlas
+    - name: Brock Craft
+  github: uwdata/visualization-curriculum
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  toc:
+    - file: intro.md
+    - title: Curriculum
+      children:
+        - file: altair_introduction.ipynb
+        - file: altair_marks_encoding.ipynb
+        - file: altair_data_transformation.ipynb
+        - file: altair_scales_axes_legends.ipynb
+        - file: altair_view_composition.ipynb
+        - file: altair_interaction.ipynb
+        - file: altair_cartographic.ipynb
+    - title: Support
+      children:
+        - file: altair_debugging.ipynb
+site:
+  options:
+    logo: altair-hist.png
+    folders: true
+  template: book-theme
