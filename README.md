@@ -94,14 +94,20 @@ The visualization curriculum can be used either online or on your local computer
 ### Online
 
 - [Jupyter Book](https://uwdata.github.io/visualization-curriculum/) to read Python notebooks online.
-- Run the **Python** notebooks online on [Colab](https://colab.research.google.com/github/uwdata/visualization-curriculum/), [Nextjournal](https://github.nextjournal.com/uwdata/visualization-curriculum/), or [Deepnote](https://deepnote.com/launch?url=https://github.com/uwdata/visualization-curriculum/blob/master/altair_introduction.ipynb)
-- Run the **JavaScript** notebooks online using [Observable](https://observablehq.com/collection/@uwdata/visualization-curriculum)
 
 ### Local Installation
 
-1. [Install Altair and a notebook environment](https://altair-viz.github.io/getting_started/installation.html). The most recent versions of these notebooks use _Altair version 4_.
-2. Download the notebooks from the [releases page](https://github.com/uwdata/visualization-curriculum/releases). Typically you will want to use the most recent release.  (If you wish to use notebooks for Altair version 3, download the [Altair v3.2 release](https://github.com/uwdata/visualization-curriculum/releases/tag/altair-v3).)
-3. Open the notebooks in your local notebook environment. For example, if you have JupyterLab installed (v1.0 or higher is required), run `jupyter lab` within the directory containing the notebooks.
+1. [Install `uv`](https://docs.astral.sh/uv/getting-started/installation/).
+2. Clone the repository and install dependencies:
+   ```bash
+   git clone https://github.com/uwdata/visualization-curriculum.git
+   cd visualization-curriculum
+   uv sync
+   ```
+3. Open the notebooks in your local notebook environment. For example:
+   ```bash
+   uv run jupyter lab
+   ```
 
 Depending on your programming environment (and whether or not you have a live internet connection), you may want to specify a particular [renderer](https://altair-viz.github.io/user_guide/display_frontends.html) for Altair.
 
