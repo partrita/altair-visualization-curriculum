@@ -1,6 +1,6 @@
 version: 1
 project:
-  title: Visualization Curriculum
+  title: 데이터 시각화 커리큘럼
   authors:
     - name: Jeffrey Heer
     - name: Dominik Moritz
@@ -13,7 +13,7 @@ project:
       output: exports/book.pdf
   toc:
     - file: intro.md
-    - title: Curriculum
+    - title: 커리큘럼
       children:
         - file: altair_introduction.ipynb
         - file: altair_marks_encoding.ipynb
@@ -22,7 +22,7 @@ project:
         - file: altair_view_composition.ipynb
         - file: altair_interaction.ipynb
         - file: altair_cartographic.ipynb
-    - title: Support
+    - title: 도움말
       children:
         - file: altair_debugging.ipynb
 site:

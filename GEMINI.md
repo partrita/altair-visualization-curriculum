@@ -38,7 +38,7 @@ To generate the static HTML version of the curriculum:
 # Build the HTML site
 uv run jupyter-book build --html
 ```
-The output will be located in `_build/site/`.
+The output will be located in `_build/html/`.
 
 ## Development Conventions
 - **Notebook-First:** All curriculum content resides in Jupyter notebooks (`.ipynb`).
