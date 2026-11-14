@@ -1,6 +1,6 @@
 # 소개
 
-[Vega-Lite](https://vega.github.io/vega-lite/)와 [Altair](https://altair-viz.github.io/)를 사용하는 대화형 노트북으로 구성된 데이터 시각화 커리큘럼입니다. 이 책은 Python 기반의 일련의 Jupyter 노트북을 포함하고 있으며, 해당되는 JavaScript 노트북 세트는 [Observable](https://observablehq.com/@uwdata/data-visualization-curriculum)에서 온라인으로 이용 가능합니다.
+[Vega-Lite](https://vega.github.io/vega-lite/)와 [Altair](https://altair-viz.github.io/)를 사용하는 대화형 노트북으로 구성된 데이터 시각화 커리큘럼입니다. 이 책은 Python 기반의 일련의 Jupyter 노트북을 포함하고 있습니다. 노트북은 [marimo](https://marimo.io/) 노트북으로도 제공되며, 해당되는 JavaScript 노트북 세트는 [Observable](https://observablehq.com/@uwdata/data-visualization-curriculum)에서 온라인으로 이용 가능합니다.
 
 ## 시작하기
 
@@ -8,13 +8,15 @@
 
 - [Observable](https://observablehq.com/)을 사용하여 온라인으로 JavaScript 노트북을 읽으려면 위의 "Observable" 페이지로 이동하여 해당 노트북을 클릭하십시오.
 - [Colab](https://colab.research.google.com/)을 사용하여 온라인으로 Python 노트북을 읽으려면 이 책의 해당 섹션을 클릭하고 페이지 상단의 작은 로켓 아이콘 위에 마우스를 올린 다음 메뉴에서 "Colab"을 선택하십시오.
+- [marimo](https://marimo.io/) 노트북을 온라인으로 실행하려면 [molab](https://marimo.io/for-learners#learn-altair)을 사용하십시오.
 - Python 노트북을 로컬에서 읽으려면 아래 지침을 따르십시오.
 
 ### 로컬 설치
 
-1. [Altair 및 노트북 환경을 설치합니다](https://altair-viz.github.io/getting_started/installation.html). 이 노트북의 최신 버전은 _Altair 버전 4_를 사용합니다.
-2. [릴리스 페이지](https://github.com/uwdata/visualization-curriculum/releases)에서 노트북을 다운로드합니다. 일반적으로 최신 릴리스를 사용하는 것이 좋습니다. (Altair 버전 3용 노트북을 사용하려면 [Altair v3.2 릴리스](https://github.com/uwdata/visualization-curriculum/releases/tag/altair-v3)를 다운로드하십시오.)
-3. 로컬 노트북 환경에서 노트북을 엽니다. 예를 들어 JupyterLab이 설치되어 있는 경우(v1.0 이상 필요), 노트북이 포함된 디렉토리 내에서 `jupyter lab`을 실행하십시오.
+1. [Altair 및 노트북 환경을 설치합니다](https://altair-viz.github.io/getting_started/installation.html). 이 노트북의 최신 버전은 _Altair 버전 6_을 사용합니다.
+2. [릴리스 페이지](https://github.com/uwdata/visualization-curriculum/releases)에서 노트북을 다운로드합니다. 일반적으로 최신 릴리스를 사용하는 것이 좋습니다.
+3. [Jupyter](https://jupyter.org/)를 사용하는 경우 로컬 노트북 환경에서 `.ipynb` 노트북을 엽니다. 예를 들어 JupyterLab이 설치되어 있는 경우(v1.0 이상 필요), 노트북이 포함된 디렉토리 내에서 `jupyter lab`을 실행하십시오. [uv](https://docs.astral.sh/uv/guides/install-python/)를 사용하는 경우 `uv run jupyter lab`을 실행할 수 있습니다(종속성이 자동으로 설치됩니다).
+4. [marimo](https://marimo.io/)를 사용하는 경우 `marimo run marimo/notebook.py`(설정한 가상 환경 사용) 또는 `uv run marimo run marimo/notebook.py`(노트북 헤더의 종속성을 자동으로 설치)를 사용하여 `marimo` 디렉토리의 `.py` 노트북을 엽니다.
 
 프로그래밍 환경(및 실시간 인터넷 연결 여부)에 따라 Altair를 위한 특정 [렌더러](https://altair-viz.github.io/user_guide/display_frontends.html)를 지정해야 할 수도 있습니다.
 
